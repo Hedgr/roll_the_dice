@@ -18,8 +18,7 @@ int every_die_ever(string x) {
     stringstream sstream;
     sstream << x;
     sstream >> x_2;
-    cout << rand() % (x_2 + 1 - 1) + 1;
-    cout << "\n";
+    cout << rand() % (x_2 + 1 - 1) + 1 << "\n";
     return 0;
 
 }
@@ -36,10 +35,5 @@ int main()
         every_die_ever(die);
         Sleep(1000);
     } while (true);
-    //rand() % (max_number + 1 - minimum_number) + minimum_number;
-    //do {
-    //    cout << rand() % (max_number + 1 - minimum_number) + minimum_number << "\n";
-    //    cin >> end_cin;
-    //} while (end_cin == "y");
     return 0;
 }
